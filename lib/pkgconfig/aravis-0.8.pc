@@ -1,4 +1,4 @@
-prefix=/home/robo/.conan/data/Aravis/0.7.3_0/roboauto/stable/package/08f0f6b54224d0f59c7a23bfbaa25f463db315ae
+prefix=/home/robo/robotrain/conan/aravis_git/package
 libdir=${prefix}/lib
 includedir=${prefix}/include
 
