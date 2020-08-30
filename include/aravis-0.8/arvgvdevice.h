@@ -37,7 +37,8 @@ G_BEGIN_DECLS
 #define ARV_TYPE_GV_DEVICE             (arv_gv_device_get_type ())
 G_DECLARE_FINAL_TYPE (ArvGvDevice, arv_gv_device, ARV, GV_DEVICE, ArvDevice)
 
-ArvDevice * 		arv_gv_device_new 				(GInetAddress *interface_address, GInetAddress *device_address);
+ArvDevice * 		arv_gv_device_new 				(GInetAddress *interface_address, GInetAddress *device_address,
+									 GError **error);
 
 guint64 		arv_gv_device_get_timestamp_tick_frequency	(ArvGvDevice *gv_device, GError **error);
 
@@ -50,6 +51,8 @@ guint			arv_gv_device_auto_packet_size 			(ArvGvDevice *gv_device, GError **erro
 
 ArvGvStreamOption	arv_gv_device_get_stream_options		(ArvGvDevice *gv_device);
 void 			arv_gv_device_set_stream_options 		(ArvGvDevice *gv_device, ArvGvStreamOption options);
+
+gboolean		arv_gv_device_is_controller			(ArvGvDevice *gv_device);
 
 G_END_DECLS
 

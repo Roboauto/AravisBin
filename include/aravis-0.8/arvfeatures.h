@@ -45,6 +45,16 @@
  * Since: 0.6.0
  */
 
-#define ARAVIS_HAS_PACKET_SOCKET 0
+#define ARAVIS_HAS_PACKET_SOCKET 1
+
+/**
+ * ARAVIS_HAS_FAST_HEARTBEAT
+ *
+ * ARAVIS_HAS_FAST_HEARTBEAT is defined as 1 if aravis is compiled with fast hearbeat option, 0 if not.
+ *
+ * Since: 0.8.0
+ */
+
+#define ARAVIS_HAS_FAST_HEARTBEAT 0
 
 #endif
