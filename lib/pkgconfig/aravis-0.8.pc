@@ -1,11 +1,12 @@
-prefix=/home/robo/robotrain/conan/aravis_git/package_arm
+prefix=/home/robo/conan/aravis/install
 libdir=${prefix}/lib
 includedir=${prefix}/include
 
 Name: Aravis
 Description: Camera control and image acquisition library
-Version: 0.7.3
-Requires: glib-2.0 gobject-2.0 gio-2.0
-Requires.private: glib-2.0 >= 2.44, gobject-2.0, gio-2.0, libxml-2.0, zlib, libxml-2.0 zlib
-Libs: -L${libdir} -laravis-0.8 -lm
+Version: 0.8.0
+Requires: glib-2.0 >= 2.44, gobject-2.0, gio-2.0
+Requires.private: libxml-2.0, zlib
+Libs: -L${libdir} -laravis-0.8
+Libs.private: -lm
 Cflags: -I${includedir}/aravis-0.8

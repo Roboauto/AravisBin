@@ -39,7 +39,7 @@ G_BEGIN_DECLS
  * Since: 0.8.0
  */
 
-#define ARAVIS_VERSION "0.7.3"
+#define ARAVIS_VERSION "0.8.0"
 
 /**
  * ARAVIS_MAJOR_VERSION:
@@ -59,7 +59,7 @@ G_BEGIN_DECLS
  * Since: 0.6.0
  */
 
-#define ARAVIS_MINOR_VERSION 7
+#define ARAVIS_MINOR_VERSION 8
 
 /**
  * ARAVIS_MICRO_VERSION:
@@ -69,7 +69,7 @@ G_BEGIN_DECLS
  * Since: 0.6.0
  */
 
-#define ARAVIS_MICRO_VERSION 3
+#define ARAVIS_MICRO_VERSION 0
 
 /**
  * ARAVIS_CHECK_VERSION:
